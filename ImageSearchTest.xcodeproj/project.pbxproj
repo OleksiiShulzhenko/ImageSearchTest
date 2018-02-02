@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		22793D3490839E5D58EE768F /* Pods_ImageSearchTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3800814B5773E74667E248F /* Pods_ImageSearchTest.framework */; };
+		4901A90B2024111500FA0C42 /* ImageRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A90A2024111500FA0C42 /* ImageRealmObject.swift */; };
+		4901A90F20242B3900FA0C42 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A90E20242B3900FA0C42 /* Container.swift */; };
+		4901A91120242B8500FA0C42 /* FetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A91020242B8500FA0C42 /* FetchedResults.swift */; };
+		4901A91320242BB600FA0C42 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A91220242BB600FA0C42 /* Persistable.swift */; };
+		4901A91720242C5000FA0C42 /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A91620242C5000FA0C42 /* WriteTransaction.swift */; };
+		4901A91920242CEB00FA0C42 /* ImageModel+Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A91820242CEB00FA0C42 /* ImageModel+Persistable.swift */; };
 		4950CB3D2023A901000BC349 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950CB3C2023A901000BC349 /* ImageTableViewCell.swift */; };
 		4950CB3F2023AB40000BC349 /* ImageTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950CB3E2023AB40000BC349 /* ImageTableViewDataSource.swift */; };
 		4950CB472023D710000BC349 /* GettyimagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950CB462023D710000BC349 /* GettyimagesAPI.swift */; };
@@ -22,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		458C888D379D4B3B84C89E21 /* Pods-ImageSearchTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageSearchTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageSearchTest/Pods-ImageSearchTest.release.xcconfig"; sourceTree = "<group>"; };
+		4901A90A2024111500FA0C42 /* ImageRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRealmObject.swift; sourceTree = "<group>"; };
+		4901A90E20242B3900FA0C42 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		4901A91020242B8500FA0C42 /* FetchedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResults.swift; sourceTree = "<group>"; };
+		4901A91220242BB600FA0C42 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		4901A91620242C5000FA0C42 /* WriteTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTransaction.swift; sourceTree = "<group>"; };
+		4901A91820242CEB00FA0C42 /* ImageModel+Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageModel+Persistable.swift"; sourceTree = "<group>"; };
 		4950CB3C2023A901000BC349 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		4950CB3E2023AB40000BC349 /* ImageTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewDataSource.swift; sourceTree = "<group>"; };
 		4950CB462023D710000BC349 /* GettyimagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettyimagesAPI.swift; sourceTree = "<group>"; };
@@ -50,6 +62,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4901A909202410F100FA0C42 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				4901A90A2024111500FA0C42 /* ImageRealmObject.swift */,
+				4901A90E20242B3900FA0C42 /* Container.swift */,
+				4901A91020242B8500FA0C42 /* FetchedResults.swift */,
+				4901A91220242BB600FA0C42 /* Persistable.swift */,
+				4901A91620242C5000FA0C42 /* WriteTransaction.swift */,
+				4901A91820242CEB00FA0C42 /* ImageModel+Persistable.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		4950CB402023D63A000BC349 /* SuportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +171,7 @@
 		49AEC1B32023A28D002A3AF4 /* ImageSearchTest */ = {
 			isa = PBXGroup;
 			children = (
+				4901A909202410F100FA0C42 /* Realm */,
 				4950CB4E2023FFCF000BC349 /* Extansions */,
 				4950CB4B2023EDEE000BC349 /* Models */,
 				4950CB482023ED0D000BC349 /* Controllers */,
@@ -305,14 +331,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4901A91120242B8500FA0C42 /* FetchedResults.swift in Sources */,
 				4950CB3D2023A901000BC349 /* ImageTableViewCell.swift in Sources */,
 				4950CB4A2023ED86000BC349 /* ImageModelController.swift in Sources */,
 				4950CB502023FFEF000BC349 /* UIViewController+AllertController.swift in Sources */,
 				49AEC1B72023A28E002A3AF4 /* ViewController.swift in Sources */,
+				4901A90B2024111500FA0C42 /* ImageRealmObject.swift in Sources */,
+				4901A91920242CEB00FA0C42 /* ImageModel+Persistable.swift in Sources */,
+				4901A91320242BB600FA0C42 /* Persistable.swift in Sources */,
 				4950CB3F2023AB40000BC349 /* ImageTableViewDataSource.swift in Sources */,
 				4950CB472023D710000BC349 /* GettyimagesAPI.swift in Sources */,
+				4901A90F20242B3900FA0C42 /* Container.swift in Sources */,
 				49AEC1B52023A28E002A3AF4 /* AppDelegate.swift in Sources */,
 				4950CB4D2023EDFE000BC349 /* ImageModel.swift in Sources */,
+				4901A91720242C5000FA0C42 /* WriteTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

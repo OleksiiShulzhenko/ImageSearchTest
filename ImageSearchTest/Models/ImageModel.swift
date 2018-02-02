@@ -11,4 +11,7 @@ import UIKit
 struct ImageModel {
     var image: UIImage
     var requestString: String
+    public let identifier: Int
 }
+
+

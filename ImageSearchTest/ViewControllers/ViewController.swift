@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         self.view.backgroundColor = .white
         
         configureSubviews()
@@ -29,11 +29,6 @@ class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate
             action: #selector(hideKeyboard))
         
         tableView.addGestureRecognizer(tap)
-        
-        
-//        GettyimagesAPI.instance.getImage(for: <#T##String#>) { (<#Bool#>, <#String#>) in
-//            <#code#>
-//        }
     }
     
     //MARK: - UITableViewDelegate
